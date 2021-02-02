@@ -1,6 +1,5 @@
 <?php
-include_once XOOPS_ROOT_PATH . '/modules/tadtools/language/' . $xoopsConfig['language'] . '/modinfo_common.php';
-
+xoops_loadLanguage('modinfo_common', 'tadtools');
 define('_MI_TADEVALUA_NAME', '評鑑檔案管理');
 define('_MI_TADEVALUA_AUTHOR', 'tad');
 define('_MI_TADEVALUA_CREDITS', 'Michael Beck');
@@ -19,11 +18,14 @@ define('_MI_TADEVALUA_OS_CHARSET_DESC', '一般來說，Windows為Big5，Linux�
 define('_MI_TADEVALUA_USE_GOOGLE_DOC', '使用Google閱讀器直接開啟檔案');
 define('_MI_TADEVALUA_USE_GOOGLE_DOC_DESC', '如此可以直接線上觀看檔案內容，無須下載');
 define('_MI_TADEVALUA_CSS_SETUP', '各階層的外觀樣式設定');
-define('_MI_TADEVALUA_CSS_SETUP_DESC', '一行是一組設定，每一行格式為：「.level1{font-size:12pt;color:blue;....}」，第一層為「.level1」，第二層為「.level2」...依此類推。');
+define('_MI_TADEVALUA_CSS_SETUP_DESC', '一行是一組設定，每一行格式為：「.level1{font-size:100%;color:blue;....}」，第一層為「.level1」，第二層為「.level2」...依此類推。');
 
 define('_MI_TADEVALUA_DIRNAME', basename(dirname(dirname(__DIR__))));
-define('_MI_TADEVALUA_HELP_HEADER', __DIR__ . '/help/helpheader.html');
+define('_MI_TADEVALUA_HELP_HEADER', __DIR__ . '/help/helpheader.tpl');
 define('_MI_TADEVALUA_BACK_2_ADMIN', '管理');
 
 //help
 define('_MI_TADEVALUA_HELP_OVERVIEW', '概要');
+
+define('_MI_TADEVALUA_USE_OFFICE_VIEWER', 'MS Office文件使用線上檢視器');
+define('_MI_TADEVALUA_USE_OFFICE_VIEWER_DESC', '是否針對MS Office文件格式使用線上檢視器');
